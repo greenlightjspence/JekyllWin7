@@ -1,0 +1,19 @@
+name: Greenlight Jekyll Site
+description: Greenlight testing jekyll site for marketing landing pages.
+markdown: redcarpet
+pygments: false
+
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: gvim
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/username.github.com/
